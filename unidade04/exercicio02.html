@@ -6,9 +6,16 @@
         
         <script src="jquery-3.2.1.min.js"></script>
         <script>
-			$( function(e) {
+			$(function () {
+                //Para adicionar  antes:
+                $('ul#listacursos').append('<li>Curso Bootstrap Fundamental</li>')
 
-			} )
+                //para adicionar depois:
+                $('ul#listacursos').prepend('<li>Curso PHP Fundamental</li>')
+
+                //Adicionar conteudo a uma tag já existente
+                $('h1').html('Formação Desenvolvimento Web completo')
+            })
 		</script>
         
     </head>
