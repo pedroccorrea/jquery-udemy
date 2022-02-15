@@ -13,14 +13,15 @@
 
 		<script src="jquery-3.2.1.min.js"></script>
         <script>
-			$( function(e) {
-	
-            });
+			$(function() {
+               $('li a[href$=".zip"]').before('<img src="imagens/icon_zip.gif">')
+               $('li a[href$=".pdf').before('<img src="imagens/icon_pdf.gif">')
+            })
 		</script>
     </head>
 
     <body>
-
+        
 		<ul>
         	<li><a href="arquivo.zip">Arquivo compactado</a></li>
             <li><a href="arquivo.zip">Arquivo zipado</a></li>
