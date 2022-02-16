@@ -10,9 +10,13 @@
         
         <script src="jquery-3.2.1.min.js"></script>
         <script>
-			$(function(e) {
-				
-			});
+			$(function() {
+                console.log('Posição top do elemento janela: ' + $('#janela').position().top)
+                console.log('Posição left do elemento janela:' + $('#janela').position().left)
+
+                console.log('Posição top do elemento janelinha: ' + $('#janelinha').offset().top)
+                console.log('Posição left do elemento janelinha: ' + $('#janelinha').offset().left)
+            })
 		</script>        
     </head>
 
