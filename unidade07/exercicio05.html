@@ -28,7 +28,6 @@
 
             function moverFotos() {
                 $('#janela').animate({left:"-=200"}, 1000, function() {
-                    $('#info').html( $('#janela').position().left)
                     if ( $('#janela').position().left == limite) {
                         $('#janela').css('left', 0)
                     }
@@ -56,31 +55,5 @@
 
             </div>
         </div>
-
-        <div id="info">
-
-        </div>
     </body>
-
 </html>
-
-
-
-<!--             var limite
-
-function moverFotos() {
-    $('#janela').animate({left:'-=200'}, 1000, function() {
-       $('#info').html($('#janela').position().left)
-       if ($('#janela').position().left == limite){
-           $('#janela').css('left', 0)
-       }
-    })
-}
-
-$(function() {
-    limite = $('#janela img').length * $('#janela img').width() * -1
-    alert(limite)
-    $('#janela').append('<img>')
-    $('#janela img:last').attr('src', 'imagens/foto1.jpg')
-    setInterval(moverFotos, 2000);
-}) -->
