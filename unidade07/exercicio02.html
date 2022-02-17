@@ -9,24 +9,23 @@
         
         <script src="jquery-3.2.1.min.js"></script>
         <script>
-			$( function(e) {			
+			$(function() {
 				$('#mostrar').click( mostrarObjeto )
 				$('#esconder').click( esconderObjeto )
 				$('#reverso').click( reversoObjeto )
 			})
-			
-			function esconderObjeto() {
-				
-			}
 
 			function mostrarObjeto() {
-				
-			}								
-			
-			function reversoObjeto() {
-				
-			}											
+				$('#janela').fadeIn(500)
+			}
 
+			function esconderObjeto() {
+				$('#janela').fadeOut(500)
+			}
+
+			function reversoObjeto() {
+				$('#janela').fadeToggle(500)
+			}
 		</script>        
     </head>
 

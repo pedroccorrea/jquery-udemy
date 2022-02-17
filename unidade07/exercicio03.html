@@ -10,27 +10,30 @@
         
         <script src="jquery-3.2.1.min.js"></script>
         <script>
-			$( function(e) {			
-				$('#mostrar').click( mostrarObjeto )
+			$(function() {
+				$('#mostrar').click( mostrarObjeto)
 				$('#esconder').click( esconderObjeto )
-				$('#reverso').click( reverterObjeto )
+				$('#reverso').click( reversoObjeto)
 			})
-			
+
 			function esconderObjeto() {
-			
+				$('#janela').slideUp(500)
 			}
 
 			function mostrarObjeto() {
-			
+				$('#janela').slideDown(500)
 			}
 
-		
+			function reversoObjeto() {
+				$('#janela').slideToggle(500)
+			}
 		</script>        
     </head>
 
     <body>
         <input type="button" id="mostrar" 	value="Mostrar" />
         <input type="button" id="esconder" 	value="Esconder" />
+		<input type="button" id="reverso"	value="Reverso">
         
         
         <div id="janela"></div>
